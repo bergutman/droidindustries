@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+
+<body>
+  <div id="controls">
+    <a id="combo1" href="">
+      <div class="circle combo1"></div>
+    </a>
+    <a id="combo2" href="">
+      <div class="circle combo2"></div>
+    </a>
+    <a id="combo3" href="">
+      <div class="circle combo3"></div>
+    </a>
+    <a id="combo4" href="">
+      <div class="circle combo4"></div>
+    </a>
+    <a id="combo5" href="">
+      <div class="circle combo5"></div>
+    </a>
+    <a id="combo6" href="">
+      <div class="circle combo6"></div>
+    </a>
+    <a href="">
+      <i class="fa fa-angle-down"></i>
+    </a>
+  </div>
+  <div id="background" class="bg1"></div>
+  <div id="mobileMenu">
+    <a href="index.html">Home</a><br>
+    <a href="search.html">Search</a><br>
+    <a href="optimization.html">Optimization</a><br>
+    <a href="analytics.html">Analytics</a><br>
+    <span><a href="tel:+1-805-895-2909"><i class="fa fa-phone"></i> 805-895-2909</a></span>
+
+  </div>
+  <div class="container-fluid page">
+    <a href="index.html">
+      <img id="logo" src="img/logoLatoWhite.svg">
+    </a>
+    <div class="row">
+      <div class="col-sm-12 nav">
+        <nav>
+          <a href="search.html">Search</a>
+          <a href="optimization.html">Optimization</a>
+          <a href="analytics.html">Analytics</a>
+          <a href="contact.html">Contact</a>
+          <span><a href="tel:+1-805-895-2909"><i class="fa fa-phone"></i> 805-895-2909</a></span>
+        </nav>
+      </div>
+      <div class="col-sm-12 nav-mobile">
+        <nav>
+          <a id="Bars" href=""><i class="fa fa-bars"></i></a>
+        </nav>
+      </div>
+      <div class="col-sm-12 contact-intro">
+        <div id="contact-intro-text">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 page-content contact-page">
+        <div class="envelope-icon-wrapper">
+          <span class="fa-stack fa-lg envelope-icon">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="col-sm-10 col-sm-push-1 mail-wrapper">
+          <h1>Let's Talk</h1>
+          <h2 class="text-xs-left">Get your questions answered. Don't be shy, we're happy to chat.
+          </h2>
+          <p class="text-xs-left">
+            <span>CALL US:</span> 888-555-1111</p>
+          <p class="text-xs-left">
+            <span>EMAIL US:</span> questions@droidindustries.com</p>
+          <p class="text-xs-left">
+            <span>LOCATION:</span> San Francisco, CA</p>
+          <form id="contact" action="//formspree.io/your@email.com" method="POST">
+            <input class="contact-input" type="email" name="email" placeholder="EMAIL*" required>
+            <input class="contact-input" type="text" name="phone" placeholder="PHONE">
+            <textarea class="contact-input" type="textfield" placeholder="WHAT'S ON YOUR MIND?" required></textarea>
+            <input class="contact-input" type="submit" value="Send">
+          </form>
+          <p class="ending-message">Ready for results? We're fast. Once we start talking, we can often get to work on your buisness in 2-3 days. Give us a shout -- we're all ears.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- jQuery first, then Bootstrap JS. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Flowtype.js/1.1.0/flowtype.min.js"></script>
+  <script>
+    $('body').flowtype({
+      minimum: 500,
+      maximum: 1200,
+      minFont: 18,
+      maxFont: 40,
+      fontRatio: 30
+    });
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  <script>
+  $("#Bars").click(function(event) {
+    event.preventDefault();
+    $("#mobileMenu").toggleClass("mobileMenuBG");
+    $("#logo").toggleClass("hide");
+    $(".nav-mobile").toggleClass("nav-mobile-open");
+  });
+  </script>
+  <script>
+    $("#combo1").click(function(event) {
+      event.preventDefault();
+      $("#background").removeClass();
+      $("#background").addClass("bg1");
+    });
+    $("#combo2").click(function(event) {
+      event.preventDefault();
+      $("#background").removeClass();
+      $("#background").addClass("bg2");
+    });
+    $("#combo3").click(function(event) {
+      event.preventDefault();
+      $("#background").removeClass();
+      $("#background").addClass("bg3");
+    });
+    $("#combo4").click(function(event) {
+      event.preventDefault();
+      $("#background").removeClass();
+      $("#background").addClass("bg4");
+    });
+    $("#combo5").click(function(event) {
+      event.preventDefault();
+      $("#background").removeClass();
+      $("#background").addClass("bg5");
+    });
+    $("#combo6").click(function(event) {
+      event.preventDefault();
+      $("#background").removeClass();
+      $("#background").addClass("bg6");
+      $("#browser").attr('src', 'img/netDark.svg');
+    });
+  </script>
+</body>
+
+</html>
