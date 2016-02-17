@@ -80,15 +80,15 @@
           </span>
         </div>
         <div class="col-sm-10 col-sm-push-1 mail-wrapper">
-          <h1>Let's Talk</h1>
+          <h1 class="grab">Let's Talk</h1>
           <h2 class="text-xs-left">Get your questions answered. Don't be shy, we're happy to chat.
           </h2>
           <p class="text-xs-left">
-            <span>CALL US:</span> 888-555-1111</p>
+            <span class="grab">CALL US:</span> 888-555-1111</p>
           <p class="text-xs-left">
-            <span>EMAIL US:</span> questions@droidindustries.com</p>
+            <span class="grab">EMAIL US:</span> questions@droidindustries.com</p>
           <p class="text-xs-left">
-            <span>LOCATION:</span> San Francisco, CA</p>
+            <span class="grab">LOCATION:</span> San Francisco, CA</p>
           <form id="contact" action="//formspree.io/your@email.com" method="POST">
             <input class="contact-input" type="email" name="email" placeholder="EMAIL*" required>
             <input class="contact-input" type="text" name="phone" placeholder="PHONE">
@@ -127,33 +127,69 @@
     $("#combo1").click(function(event) {
       event.preventDefault();
       $("#background").removeClass();
+      $("button").removeClass("color2 color3 color4 color5 color6");
+      $(".fa-circle").removeClass("dark2 dark3 dark4 dark5 dark6");
+      $(".grab").removeClass("dark2 dark3 dark4 dark5 dark6");
       $("#background").addClass("bg1");
+      $("button").addClass("color1");
+      $(".fa-circle").addClass("dark1");
+      $(".grab").addClass("dark1");
     });
     $("#combo2").click(function(event) {
       event.preventDefault();
       $("#background").removeClass();
+      $("button").removeClass("color1 color3 color4 color5 color6");
+      $(".fa-circle").removeClass("dark1 dark3 dark4 dark5 dark6");
+      $(".grab").removeClass("dark1 dark3 dark4 dark5 dark6");
       $("#background").addClass("bg2");
+      $(".btn").addClass("color2");
+      $(".fa-circle").addClass("dark2");
+      $(".grab").addClass("dark2");
     });
     $("#combo3").click(function(event) {
       event.preventDefault();
       $("#background").removeClass();
+      $("button").removeClass("color2 color1 color4 color5 color6");
+      $(".fa-circle").removeClass("dark2 dark1 dark4 dark5 dark6");
+      $(".grab").removeClass("dark2 dark1 dark4 dark5 dark6");
       $("#background").addClass("bg3");
+      $("button").addClass("color3");
+      $(".fa-circle").addClass("dark3");
+      $(".grab").addClass("dark3");
     });
     $("#combo4").click(function(event) {
       event.preventDefault();
       $("#background").removeClass();
+      $("button").removeClass("color2 color3 color1 color5 color6");
+      $(".fa-circle").removeClass("dark2 dark3 dark1 dark5 dark6");
+      $(".grab").removeClass("dark2 dark3 dark1 dark5 dark6");
       $("#background").addClass("bg4");
+      $("button").addClass("color4");
+      $(".fa-circle").addClass("dark4");
+      $(".grab").addClass("dark4");
     });
     $("#combo5").click(function(event) {
       event.preventDefault();
       $("#background").removeClass();
+      $("button").removeClass("color2 color3 color4 color1 color6");
+      $(".fa-circle").removeClass("dark2 dark3 dark4 dark1 dark6");
+      $(".grab").removeClass("dark2 dark3 dark4 dark1 dark6");
       $("#background").addClass("bg5");
+      $("button").addClass("color5");
+      $(".fa-circle").addClass("dark5");
+      $(".grab").addClass("dark5");
     });
     $("#combo6").click(function(event) {
       event.preventDefault();
       $("#background").removeClass();
+      $("button").removeClass("color2 color3 color4 color5 color1");
+      $(".fa-circle").removeClass("dark2 dark3 dark4 dark5 dark1");
+      $(".grab").removeClass("dark2 dark3 dark4 dark5 dark1");
       $("#background").addClass("bg6");
       $("#browser").attr('src', 'img/netDark.svg');
+      $("button").addClass("color6");
+      $(".fa-circle").addClass("dark6");
+      $(".grab").addClass("dark6");
     });
   </script>
 </body>

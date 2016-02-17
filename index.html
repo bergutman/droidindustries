@@ -40,10 +40,14 @@
   </div>
   <div id="background" class="bg1"></div>
   <div id="mobileMenu">
-    <a href="search.html">Search</a><br>
-    <a href="optimization.html">Optimization</a><br>
-    <a href="analytics.html">Analytics</a><br>
-    <a href="contact.html">Contact</a><br>
+    <a href="search.html">Search</a>
+    <br>
+    <a href="optimization.html">Optimization</a>
+    <br>
+    <a href="analytics.html">Analytics</a>
+    <br>
+    <a href="contact.html">Contact</a>
+    <br>
     <span><a href="tel:+1-805-895-2909"><i class="fa fa-phone"></i> 805-895-2909</a></span>
 
   </div>
@@ -79,7 +83,7 @@
     <div class="row">
       <div class="col-sm-12 home-content">
         <div class="col-sm-4">
-          <img src="img/www.svg">
+          <img id="icon1" src="img/www.svg">
           <h2>Paid Search
             <br>Advertising</h2>
           <a href="search.html">
@@ -87,14 +91,14 @@
           </a>
         </div>
         <div class="col-sm-4">
-          <img src="img/optimize.svg">
+          <img id="icon2" src="img/optimize.svg">
           <h2>Online Marketing Optimization</h2>
           <a href="optimization.html">
             <button type="button" class="btn btn-primary btn-lg btn-block">READ MORE</button>
           </a>
         </div>
         <div class="col-sm-4">
-          <img src="img/results.svg">
+          <img id="icon3" src="img/results.svg">
           <h2>Analytics to measure
             <br>and prove results</h2>
           <a href="analytics.html">
@@ -126,7 +130,9 @@
             <h1 class="contact-heading">
               Get Started - Contact Us</h1>
             <p class="contact-description">To increase lead volume, cut waste, improve efficiency, and capture new data to help you get ahead of your competition - contact us today.</p>
-            <a href="contact.html"><button type="button" class="btn btn-primary btn-lg">CONTACT US</button></a>
+            <a href="contact.html">
+              <button type="button" class="btn btn-primary btn-lg">CONTACT US</button>
+            </a>
           </div>
           <div class="col-xs-12">
             <h1 class="contact-heading">
@@ -154,44 +160,85 @@
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
   <script>
-  $("#Bars").click(function(event) {
-    event.preventDefault();
-    $("#mobileMenu").toggleClass("mobileMenuBG");
-    $("#logo").toggleClass("hide");
-    $(".nav-mobile").toggleClass("nav-mobile-open");
-  });
+    $("#Bars").click(function(event) {
+      event.preventDefault();
+      $("#mobileMenu").toggleClass("mobileMenuBG");
+      $("#logo").toggleClass("hide");
+      $(".nav-mobile").toggleClass("nav-mobile-open");
+    });
   </script>
   <script>
     $("#combo1").click(function(event) {
       event.preventDefault();
       $("#background").removeClass();
+      $("button").removeClass("color2 color3 color4 color5 color6");
+      $(".fa-circle").removeClass("dark2 dark3 dark4 dark5 dark6");
       $("#background").addClass("bg1");
+      $("button").addClass("color1");
+      $(".fa-circle").addClass("dark1");
+      $(icon1).attr('src', 'img/www.svg');
+      $(icon2).attr('src', 'img/optimize.svg');
+      $(icon3).attr('src', 'img/results.svg');
     });
     $("#combo2").click(function(event) {
       event.preventDefault();
       $("#background").removeClass();
+      $("button").removeClass("color1 color3 color4 color5 color6");
+      $(".fa-circle").removeClass("dark1 dark3 dark4 dark5 dark6");
       $("#background").addClass("bg2");
+      $(".btn").addClass("color2");
+      $(".fa-circle").addClass("dark2");
+      $(icon1).attr('src', 'img/2/www.svg');
+      $(icon2).attr('src', 'img/2/optimize.svg');
+      $(icon3).attr('src', 'img/2/results.svg');
     });
     $("#combo3").click(function(event) {
       event.preventDefault();
       $("#background").removeClass();
+      $("button").removeClass("color2 color1 color4 color5 color6");
+      $(".fa-circle").removeClass("dark2 dark1 dark4 dark5 dark6");
       $("#background").addClass("bg3");
+      $("button").addClass("color3");
+      $(".fa-circle").addClass("dark3");
+      $(icon1).attr('src', 'img/3/www.svg');
+      $(icon2).attr('src', 'img/3/optimize.svg');
+      $(icon3).attr('src', 'img/3/results.svg');
     });
     $("#combo4").click(function(event) {
       event.preventDefault();
       $("#background").removeClass();
+      $("button").removeClass("color2 color3 color1 color5 color6");
+      $(".fa-circle").removeClass("dark2 dark3 dark1 dark5 dark6");
       $("#background").addClass("bg4");
+      $("button").addClass("color4");
+      $(".fa-circle").addClass("dark4");
+      $(icon1).attr('src', 'img/4/www.svg');
+      $(icon2).attr('src', 'img/4/optimize.svg');
+      $(icon3).attr('src', 'img/4/results.svg');
     });
     $("#combo5").click(function(event) {
       event.preventDefault();
       $("#background").removeClass();
+      $("button").removeClass("color2 color3 color4 color1 color6");
+      $(".fa-circle").removeClass("dark2 dark3 dark4 dark1 dark6");
       $("#background").addClass("bg5");
+      $("button").addClass("color5");
+      $(".fa-circle").addClass("dark5");
+      $(icon1).attr('src', 'img/5/www.svg');
+      $(icon2).attr('src', 'img/5/optimize.svg');
+      $(icon3).attr('src', 'img/5/results.svg');
     });
     $("#combo6").click(function(event) {
       event.preventDefault();
       $("#background").removeClass();
+      $("button").removeClass("color2 color3 color4 color5 color1");
+      $(".fa-circle").removeClass("dark2 dark3 dark4 dark5 dark1");
       $("#background").addClass("bg6");
-      $("#browser").attr('src', 'img/netDark.svg');
+      $("button").addClass("color6");
+      $(".fa-circle").addClass("dark6");
+      $(icon1).attr('src', 'img/6/www.svg');
+      $(icon2).attr('src', 'img/6/optimize.svg');
+      $(icon3).attr('src', 'img/6/results.svg');
     });
   </script>
 </body>

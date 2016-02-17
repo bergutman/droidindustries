@@ -28,6 +28,79 @@ h2 {
   font-size: 1em;
 }
 body {
+  /*color stuff */
+  .light2 {
+    color: #F1C40F !important;
+  }
+  .dark2 {
+    color: #F39C12 !important;
+  }
+  .color2 {
+    background-color: #F39C12 !important;
+    &:hover {
+      background-color: #F1C40F !important;
+    }
+  }
+  .light1 {
+    color: #F75959 !important;
+  }
+  .dark1 {
+    color: #CC4949 !important;
+  }
+  .color1 {
+    background-color: #CC4949 !important;
+    &:hover {
+      background-color: #F75959 !important;
+    }
+  }
+  .light3 {
+    color: #1ABC9C !important;
+  }
+  .dark3 {
+    color: #16A085 !important;
+  }
+  .color3 {
+    background-color: #16A085 !important;
+    &:hover {
+      background-color: #1ABC9C !important;
+  }
+}
+  .light4 {
+    color: #2ECC71 !important;
+  }
+  .dark4 {
+    color: #27AE60 !important;
+  }
+  .color4 {
+    background-color: #27AE60 !important;
+    &:hover {
+      background-color: #2ECC71 !important;
+  }
+}
+  .light5 {
+    color: #3498DB !important;
+  }
+  .dark5 {
+    color: #2980B9 !important;
+  }
+  .color5 {
+    background-color: #2980B9 !important;
+    &:hover {
+      background-color: #3498DB !important;
+  }
+}
+  .light6 {
+    color: #34495E !important;
+  }
+  .dark6 {
+    color: #2C3E50 !important;
+  }
+  .color6 {
+    background-color: #2C3E50 !important;
+    &:hover {
+      background-color: #34495E !important;
+  }
+}
   #controls {
     position: fixed;
     bottom: 0;
@@ -48,11 +121,11 @@ body {
       background: white;
       float: left;
     }
-    .combo1 {
+    .combo2 {
       background-color: #F1C40F;
     }
-    .combo2 {
-      background-color: #E74C3C;
+    .combo1 {
+      background-color: #F75959;
     }
     .combo3 {
       background-color: #1ABC9C;
@@ -108,11 +181,11 @@ body {
   .hide {
     display: none !important;
   }
-  .bg1 {
+  .bg2 {
     background: linear-gradient(60deg,#F39C12 0,#F39C12 60%,#F1C40F 60%,#F1C40F 100%);
   }
-  .bg2 {
-    background: linear-gradient(60deg,#C0392B 0,#C0392B 60%,#E74C3C 60%,#E74C3C 100%);
+  .bg1 {
+    background: linear-gradient(60deg,#CC4949 0,#CC4949 60%,#F75959 60%,#F75959 100%);
   }
   .bg3 {
     background: linear-gradient(60deg,#16A085 0,#16A085 60%,#1ABC9C 60%,#1ABC9C 100%);
@@ -288,10 +361,10 @@ body {
       button {
         width: 50%;
         margin-left: 25%;
-        background-color: #F39C12;
+        background-color: #CC4949;
         border: 0 solid white;
         &:hover {
-          background-color: #F1C40F;
+          background-color: #F75959;
         }
         @media(max-width:60em) {
           font-size: 0.5em;
@@ -306,7 +379,7 @@ body {
         font-size: 1.5em;
         text-align: center;
         .envelope-icon {
-          color: #F39C12;
+          color: #CC4949;
           z-index: 2;
         }
       }
@@ -316,7 +389,7 @@ body {
         padding: 7vh 5%;
         p {
           span {
-            color: #F39C12;
+            color: #CC4949;
             font-weight: 700;
           }
         }
@@ -344,7 +417,7 @@ body {
         .search-icon {
           font-size: 2em;
           text-align: center;
-          color: #F39C12;
+          color: #CC4949;
         }
         @media(min-width: 34em) {
           padding: 5vh 10%;
@@ -354,7 +427,7 @@ body {
         }
       }
       h1 {
-        color: #F39C12;
+        color: #CC4949;
       }
       h2 {
         font-size: 0.6em;
@@ -468,7 +541,7 @@ body {
         margin-left: 25%;
       }
       h1 {
-        color: #F39C12;
+        color: #CC4949;
       }
       h2 {
         font-size: 1em;
@@ -481,10 +554,10 @@ body {
       button {
         width: 80%;
         margin-left: 10%;
-        background-color: #F39C12;
+        background-color: #CC4949;
         border: 0 solid white;
         &:hover {
-          background-color: #F1C40F;
+          background-color: #F75959;
         }
       }
       @media(min-width: 32em) {
@@ -525,7 +598,7 @@ body {
             font-size: 2.5em;
           }
           .envelope-icon {
-            color: #F39C12;
+            color: #CC4949;
             z-index: 2;
           }
         }
@@ -550,10 +623,10 @@ body {
           margin-left: 25%;
           margin-top: -5vh;
           font-size: 0.5em;
-          background-color: #F39C12 !important;
+          background-color: #CC4949;
           border: 0 solid white;
           &:hover {
-            background-color: #F1C40F !important;
+            background-color: #F75959;
           }
           @media(min-width:34em) {
             width: auto;
@@ -595,7 +668,7 @@ body {
             font-size: 2.5em;
           }
           .envelope-icon {
-            color: #F39C12;
+            color: #CC4949;
             z-index: 2;
           }
         }
@@ -622,10 +695,10 @@ body {
           margin-left: 25%;
           margin-top: -5vh;
           font-size: 0.5em;
-          background-color: #F39C12 !important;
+          background-color: #CC4949;
           border: 0 solid white;
           &:hover {
-            background-color: #F1C40F !important;
+            background-color: #F75959;
           }
           @media(min-width:34em) {
             width: auto;
