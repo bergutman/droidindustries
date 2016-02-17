@@ -516,11 +516,11 @@ body {
     body .page .page-contact {
       height: auto;
       background-color: #fff;
-      padding: 10vh 0%; }
+      padding: 10vh 0; }
       body .page .page-contact .contact-card {
         background-color: #fff;
         height: 50vh;
-        padding: 10vh 10% 15vh 10%; }
+        padding: 10vh 10% 15vh; }
         body .page .page-contact .contact-card .col-xs-3 {
           display: none; }
           @media (min-width: 34em) {
@@ -616,5 +616,30 @@ body {
           letter-spacing: 0.01em;
           line-height: 1em;
           padding-bottom: 2vh; }
+    body .page .footer {
+      padding-top: 10vh;
+      background: #fff !important; }
+      body .page .footer div {
+        background: #fff !important;
+        display: inline;
+        padding: 2vh 0% 0 2%; }
+      body .page .footer #footerLogo {
+        width: 50%; }
+      body .page .footer #slogan {
+        float: left; }
+      body .page .footer a {
+        text-align: center;
+        color: #373a3c;
+        font-size: 0.5em;
+        display: inline;
+        float: bottom right;
+        padding-right: 5px; }
+      body .page .footer p {
+        text-align: center;
+        color: #373a3c;
+        font-size: 0.5em;
+        display: inline;
+        float: bottom right;
+        padding-right: 5px; }
 
 /*# sourceMappingURL=style.css.map */

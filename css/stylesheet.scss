@@ -63,8 +63,8 @@ body {
     background-color: #16A085 !important;
     &:hover {
       background-color: #1ABC9C !important;
+    }
   }
-}
   .light4 {
     color: #2ECC71 !important;
   }
@@ -75,8 +75,8 @@ body {
     background-color: #27AE60 !important;
     &:hover {
       background-color: #2ECC71 !important;
+    }
   }
-}
   .light5 {
     color: #3498DB !important;
   }
@@ -87,8 +87,8 @@ body {
     background-color: #2980B9 !important;
     &:hover {
       background-color: #3498DB !important;
+    }
   }
-}
   .light6 {
     color: #34495E !important;
   }
@@ -99,8 +99,8 @@ body {
     background-color: #2C3E50 !important;
     &:hover {
       background-color: #34495E !important;
+    }
   }
-}
   #controls {
     position: fixed;
     bottom: 0;
@@ -639,11 +639,11 @@ body {
     .page-contact {
       height: auto;
       background-color: #fff;
-      padding: 10vh 0%;
+      padding: 10vh 0;
       .contact-card {
         background-color: #fff;
         height: 50vh;
-        padding: 10vh 10% 15vh 10%;
+        padding: 10vh 10% 15vh;
         .col-xs-3 {
           display: none;
           @media(min-width: 34em) {
@@ -762,6 +762,37 @@ body {
           line-height: 1em;
           padding-bottom: 2vh;
         }
+      }
+    }
+    .footer {
+      padding-top: 10vh;
+      background: #fff !important;
+      div {
+        background: #fff !important;
+        display: inline;
+        padding: 2vh 0% 0 2%;
+      }
+      #footerLogo {
+        width: 50%;
+      }
+      #slogan {
+        float: left;
+      }
+      a {
+        text-align: center;
+        color: #373a3c;
+        font-size: 0.5em;
+        display: inline;
+        float: bottom right;
+        padding-right: 5px;
+      }
+      p {
+        text-align: center;
+        color: #373a3c;
+        font-size: 0.5em;
+        display: inline;
+        float: bottom right;
+        padding-right: 5px;
       }
     }
   }
