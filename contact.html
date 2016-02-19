@@ -40,10 +40,14 @@
   </div>
   <div id="background" class="bg1"></div>
   <div id="mobileMenu">
-    <a href="index.html">Home</a><br>
-    <a href="search.html">Search</a><br>
-    <a href="optimization.html">Optimization</a><br>
-    <a href="analytics.html">Analytics</a><br>
+    <a href="index.html">Home</a>
+    <br>
+    <a href="search.html">Search</a>
+    <br>
+    <a href="optimization.html">Optimization</a>
+    <br>
+    <a href="analytics.html">Analytics</a>
+    <br>
     <span><a href="tel:+1-805-895-2909"><i class="fa fa-phone"></i> 805-895-2909</a></span>
 
   </div>
@@ -80,37 +84,45 @@
           </span>
         </div>
         <div class="col-sm-10 col-sm-push-1 mail-wrapper">
-          <h1 class="grab">Let's Talk</h1>
-          <h2 class="text-xs-left">Get your questions answered. Don't be shy, we're happy to chat.
-          </h2>
-          <p class="text-xs-left">
-            <span class="grab">CALL US:</span> 888-555-1111</p>
-          <p class="text-xs-left">
-            <span class="grab">EMAIL US:</span> questions@droidindustries.com</p>
-          <p class="text-xs-left">
-            <span class="grab">LOCATION:</span> San Francisco, CA</p>
+          <div class="contact-description">
+            <h1 class="grab">Let's Talk</h1>
+            <p class="text-xs-left">Get your questions answered. Don't be shy, we're happy to chat.
+            </p>
+            <br>
+            <p class="text-xs-left">
+              <span class="grab">CALL US:</span> 888-555-1111</p>
+            <p class="text-xs-left">
+              <span class="grab">EMAIL US:</span> questions@droidindustries.com</p>
+            <p class="text-xs-left">
+              <span class="grab">LOCATION:</span> San Francisco, CA</p>
+          </div>
           <form id="contact" action="//formspree.io/your@email.com" method="POST">
             <input class="contact-input" type="email" name="email" placeholder="EMAIL*" required>
             <input class="contact-input" type="text" name="phone" placeholder="PHONE">
             <textarea class="contact-input" type="textfield" placeholder="WHAT'S ON YOUR MIND?" required></textarea>
             <input class="contact-input" type="submit" value="Send">
           </form>
-          <p class="ending-message">Ready for results? We're fast. Once we start talking, we can often get to work on your buisness in 2-3 days. Give us a shout -- we're all ears.</p>
+          <p class="ending-message text-xs-center">Ready for results? We're fast. Once we start talking, we can often get to work on your buisness in 2-3 days. Give us a shout -- we're all ears.</p>
         </div>
       </div>
     </div>
     <div class="row footer">
       <div class="col-xs-12">
         <div class="col-xs-6">
-          <img id="footerLogo" src="img/logoLato.svg"><br>
+          <img id="footerLogo" src="img/logoLato.svg">
+          <br>
           <p id="slogan">Search. Optimization. Analytics.</p>
         </div>
         <div class="col-xs-6">
           <nav>
-            <a href="search.html">Search</a><p>/</p>
-            <a href="optimization.html">Optimization</a><p>/</p>
-            <a href="analytics.html">Analytics</a><p>/</p>
-            <a href="contact.html">Contact</a><p>/</p>
+            <a href="search.html">Search</a>
+            <p>/</p>
+            <a href="optimization.html">Optimization</a>
+            <p>/</p>
+            <a href="analytics.html">Analytics</a>
+            <p>/</p>
+            <a href="contact.html">Contact</a>
+            <p>/</p>
             <span><a href="tel:+1-805-895-2909"><i class="fa fa-phone"></i> 805-895-2909</a></span>
           </nav>
         </div>
@@ -133,12 +145,12 @@
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
   <script>
-  $("#Bars").click(function(event) {
-    event.preventDefault();
-    $("#mobileMenu").toggleClass("mobileMenuBG");
-    $("#logo").toggleClass("hide");
-    $(".nav-mobile").toggleClass("nav-mobile-open");
-  });
+    $("#Bars").click(function(event) {
+      event.preventDefault();
+      $("#mobileMenu").toggleClass("mobileMenuBG");
+      $("#logo").toggleClass("hide");
+      $(".nav-mobile").toggleClass("nav-mobile-open");
+    });
   </script>
   <script>
     $("#combo1").click(function(event) {

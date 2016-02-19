@@ -301,30 +301,55 @@ body {
       padding: 10vh 10%;
       background-color: white; }
       body .page .page-content .envelope-icon-wrapper {
+        margin-top: -15vh;
         font-size: 1.5em;
         text-align: center; }
+        @media (min-width: 34em) {
+          body .page .page-content .envelope-icon-wrapper {
+            margin-top: -30vh; } }
+        body .page .page-content .envelope-icon-wrapper .fa-circle {
+          color: #F9BF3B; }
         body .page .page-content .envelope-icon-wrapper .envelope-icon {
           color: #CC4949;
           z-index: 2; }
       body .page .page-content .mail-wrapper {
         background-color: #f4f1f0;
-        margin-top: -10vh;
-        padding: 7vh 5%; }
-        body .page .page-content .mail-wrapper p span {
-          color: #CC4949;
-          font-weight: 700; }
+        margin-top: -5vh;
+        padding: 5vh 5%;
+        line-height: 0.5; }
+        @media (min-width: 34em) {
+          body .page .page-content .mail-wrapper {
+            margin-top: -6vh; } }
+        @media (min-width: 48em) {
+          body .page .page-content .mail-wrapper {
+            margin-top: -8vh; } }
+        @media (min-width: 50em) {
+          body .page .page-content .mail-wrapper {
+            margin-top: -10vh; } }
+        body .page .page-content .mail-wrapper .contact-description {
+          line-height: 0.25; }
+        body .page .page-content .mail-wrapper h1 {
+          font-size: 1em; }
+        body .page .page-content .mail-wrapper p {
+          font-size: 0.4em;
+          display: inline; }
+          body .page .page-content .mail-wrapper p span {
+            color: #CC4949;
+            font-weight: 700; }
         body .page .page-content .mail-wrapper label {
           font-size: 0.25em; }
         body .page .page-content .mail-wrapper #contact .contact-input {
           width: 100%;
           margin: 1vh 0;
+          padding: 1vh 1%;
+          line-height: 1.5 !important;
           border: 0;
-          font-size: 0.5em; }
+          font-size: 0.4em; }
         body .page .page-content .mail-wrapper #contact textarea {
-          height: 30vh; }
+          height: 20vh; }
         body .page .page-content .mail-wrapper .ending-message {
-          font-size: 0.4em;
-          padding: 0 5%; }
+          display: block;
+          font-size: 0.3em; }
       body .page .page-content .search-icon-wrapper {
         padding: 5vh 5%; }
         body .page .page-content .search-icon-wrapper .search-icon {
@@ -622,7 +647,7 @@ body {
       body .page .footer div {
         background: #fff !important;
         display: inline;
-        padding: 2vh 0% 0 2%; }
+        padding: 2vh 0 0 2%; }
       body .page .footer #footerLogo {
         width: 50%; }
       body .page .footer #slogan {

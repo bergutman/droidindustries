@@ -376,8 +376,15 @@ body {
       padding: 10vh 10%;
       background-color: white;
       .envelope-icon-wrapper {
+        margin-top: -15vh;
+        @media(min-width: 34em) {
+          margin-top: -30vh;
+        }
         font-size: 1.5em;
         text-align: center;
+        .fa-circle {
+          color: #F9BF3B;
+        }
         .envelope-icon {
           color: #CC4949;
           z-index: 2;
@@ -385,9 +392,27 @@ body {
       }
       .mail-wrapper {
         background-color: #f4f1f0;
-        margin-top: -10vh;
-        padding: 7vh 5%;
+        margin-top: -5vh;
+        padding: 5vh 5%;
+        line-height: 0.5;
+        @media(min-width: 34em) {
+          margin-top: -6vh;
+        }
+        @media(min-width: 48em) {
+          margin-top: -8vh;
+        }
+        @media(min-width: 50em) {
+          margin-top: -10vh;
+        }
+        .contact-description {
+          line-height: 0.25;
+        }
+        h1 {
+          font-size: 1em;
+        }
         p {
+          font-size: 0.4em;
+          display: inline;
           span {
             color: #CC4949;
             font-weight: 700;
@@ -400,16 +425,18 @@ body {
           .contact-input {
             width: 100%;
             margin: 1vh 0;
+            padding: 1vh 1%;
+            line-height: 1.5 !important;
             border: 0;
-            font-size: 0.5em;
+            font-size: 0.4em;
           }
           textarea {
-            height: 30vh;
+            height: 20vh;
           }
         }
         .ending-message {
-          font-size: 0.4em;
-          padding: 0 5%;
+          display: block;
+          font-size: 0.3em;
         }
       }
       .search-icon-wrapper {
@@ -770,7 +797,7 @@ body {
       div {
         background: #fff !important;
         display: inline;
-        padding: 2vh 0% 0 2%;
+        padding: 2vh 0 0 2%;
       }
       #footerLogo {
         width: 50%;
