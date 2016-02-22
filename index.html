@@ -9,35 +9,12 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css"></link>
 </head>
 
 <body>
-  <div id="controls">
-    <a id="combo1" href="">
-      <div class="circle combo1"></div>
-    </a>
-    <a id="combo2" href="">
-      <div class="circle combo2"></div>
-    </a>
-    <a id="combo3" href="">
-      <div class="circle combo3"></div>
-    </a>
-    <a id="combo4" href="">
-      <div class="circle combo4"></div>
-    </a>
-    <a id="combo5" href="">
-      <div class="circle combo5"></div>
-    </a>
-    <a id="combo6" href="">
-      <div class="circle combo6"></div>
-    </a>
-    <a href="">
-      <i class="fa fa-angle-down"></i>
-    </a>
-  </div>
   <div id="background" class="bg1"></div>
   <div id="mobileMenu">
     <a href="search.html">Search</a>
@@ -53,7 +30,7 @@
   </div>
   <div class="container-fluid page">
     <a href="index.html">
-      <img id="logo" src="img/logoLatoWhite.svg">
+      <img id="logo" src="img/logoWhite.svg">
     </a>
     <div class="row">
       <div class="col-sm-12 nav">
@@ -66,6 +43,7 @@
         </nav>
       </div>
       <div class="col-sm-12 nav-mobile">
+          <a id="number" href="tel:+1-805-895-2909"><i class="fa fa-phone"></i> 805-895-2909</a>
         <nav>
           <a id="Bars" href=""><i class="fa fa-bars"></i></a>
         </nav>
@@ -83,7 +61,12 @@
     <div class="row">
       <div class="col-sm-12 home-content">
         <div class="col-sm-4">
-          <img id="icon1" src="img/www.svg">
+          <h1>
+          <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-search fa-stack-1x fa-inverse"></i>
+            </span>
+          </h1>
           <h2>Paid Search
             <br>Advertising</h2>
           <a href="search.html">
@@ -91,14 +74,24 @@
           </a>
         </div>
         <div class="col-sm-4">
-          <img id="icon2" src="img/optimize.svg">
+          <h1>
+          <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-rocket fa-stack-1x fa-inverse"></i>
+            </span>
+          </h1>
           <h2>Online Marketing Optimization</h2>
           <a href="optimization.html">
             <button type="button" class="btn btn-primary btn-lg btn-block">READ MORE</button>
           </a>
         </div>
         <div class="col-sm-4">
-          <img id="icon3" src="img/results.svg">
+          <h1>
+          <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
+            </span>
+          </h1>
           <h2>Analytics to measure
             <br>and prove results</h2>
           <a href="analytics.html">
@@ -146,8 +139,7 @@
     <div class="row footer">
       <div class="col-xs-12">
         <div class="col-xs-6">
-          <img id="footerLogo" src="img/logoLato.svg"><br>
-          <p id="slogan">Search. Optimization. Analytics.</p>
+          <img id="footerLogo" src="img/logo.svg"><br>
         </div>
         <div class="col-xs-6">
           <nav>
@@ -181,81 +173,8 @@
       event.preventDefault();
       $("#mobileMenu").toggleClass("mobileMenuBG");
       $("#logo").toggleClass("hide");
+      $("#number").toggleClass("hide");
       $(".nav-mobile").toggleClass("nav-mobile-open");
-    });
-  </script>
-  <script>
-    $("#combo1").click(function(event) {
-      event.preventDefault();
-      $("#background").removeClass();
-      $("button").removeClass("color2 color3 color4 color5 color6");
-      $(".fa-circle").removeClass("dark2 dark3 dark4 dark5 dark6");
-      $("#background").addClass("bg1");
-      $("button").addClass("color1");
-      $(".fa-circle").addClass("dark1");
-      $(icon1).attr('src', 'img/www.svg');
-      $(icon2).attr('src', 'img/optimize.svg');
-      $(icon3).attr('src', 'img/results.svg');
-    });
-    $("#combo2").click(function(event) {
-      event.preventDefault();
-      $("#background").removeClass();
-      $("button").removeClass("color1 color3 color4 color5 color6");
-      $(".fa-circle").removeClass("dark1 dark3 dark4 dark5 dark6");
-      $("#background").addClass("bg2");
-      $(".btn").addClass("color2");
-      $(".fa-circle").addClass("dark2");
-      $(icon1).attr('src', 'img/2/www.svg');
-      $(icon2).attr('src', 'img/2/optimize.svg');
-      $(icon3).attr('src', 'img/2/results.svg');
-    });
-    $("#combo3").click(function(event) {
-      event.preventDefault();
-      $("#background").removeClass();
-      $("button").removeClass("color2 color1 color4 color5 color6");
-      $(".fa-circle").removeClass("dark2 dark1 dark4 dark5 dark6");
-      $("#background").addClass("bg3");
-      $("button").addClass("color3");
-      $(".fa-circle").addClass("dark3");
-      $(icon1).attr('src', 'img/3/www.svg');
-      $(icon2).attr('src', 'img/3/optimize.svg');
-      $(icon3).attr('src', 'img/3/results.svg');
-    });
-    $("#combo4").click(function(event) {
-      event.preventDefault();
-      $("#background").removeClass();
-      $("button").removeClass("color2 color3 color1 color5 color6");
-      $(".fa-circle").removeClass("dark2 dark3 dark1 dark5 dark6");
-      $("#background").addClass("bg4");
-      $("button").addClass("color4");
-      $(".fa-circle").addClass("dark4");
-      $(icon1).attr('src', 'img/4/www.svg');
-      $(icon2).attr('src', 'img/4/optimize.svg');
-      $(icon3).attr('src', 'img/4/results.svg');
-    });
-    $("#combo5").click(function(event) {
-      event.preventDefault();
-      $("#background").removeClass();
-      $("button").removeClass("color2 color3 color4 color1 color6");
-      $(".fa-circle").removeClass("dark2 dark3 dark4 dark1 dark6");
-      $("#background").addClass("bg5");
-      $("button").addClass("color5");
-      $(".fa-circle").addClass("dark5");
-      $(icon1).attr('src', 'img/5/www.svg');
-      $(icon2).attr('src', 'img/5/optimize.svg');
-      $(icon3).attr('src', 'img/5/results.svg');
-    });
-    $("#combo6").click(function(event) {
-      event.preventDefault();
-      $("#background").removeClass();
-      $("button").removeClass("color2 color3 color4 color5 color1");
-      $(".fa-circle").removeClass("dark2 dark3 dark4 dark5 dark1");
-      $("#background").addClass("bg6");
-      $("button").addClass("color6");
-      $(".fa-circle").addClass("dark6");
-      $(icon1).attr('src', 'img/6/www.svg');
-      $(icon2).attr('src', 'img/6/optimize.svg');
-      $(icon3).attr('src', 'img/6/results.svg');
     });
   </script>
 </body>

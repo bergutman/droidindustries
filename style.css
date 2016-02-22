@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 18px; }
 
 h1,
@@ -19,652 +19,608 @@ h1 {
 h2 {
   font-size: 1em; }
 
-body {
-  /*color stuff */ }
-  body .light2 {
-    color: #F1C40F !important; }
-  body .dark2 {
-    color: #F39C12 !important; }
-  body .color2 {
-    background-color: #F39C12 !important; }
-    body .color2:hover {
-      background-color: #F1C40F !important; }
-  body .light1 {
-    color: #F75959 !important; }
-  body .dark1 {
-    color: #CC4949 !important; }
-  body .color1 {
-    background-color: #CC4949 !important; }
-    body .color1:hover {
-      background-color: #F75959 !important; }
-  body .light3 {
-    color: #1ABC9C !important; }
-  body .dark3 {
-    color: #16A085 !important; }
-  body .color3 {
-    background-color: #16A085 !important; }
-    body .color3:hover {
-      background-color: #1ABC9C !important; }
-  body .light4 {
-    color: #2ECC71 !important; }
-  body .dark4 {
-    color: #27AE60 !important; }
-  body .color4 {
-    background-color: #27AE60 !important; }
-    body .color4:hover {
-      background-color: #2ECC71 !important; }
-  body .light5 {
-    color: #3498DB !important; }
-  body .dark5 {
-    color: #2980B9 !important; }
-  body .color5 {
-    background-color: #2980B9 !important; }
-    body .color5:hover {
-      background-color: #3498DB !important; }
-  body .light6 {
-    color: #34495E !important; }
-  body .dark6 {
-    color: #2C3E50 !important; }
-  body .color6 {
-    background-color: #2C3E50 !important; }
-    body .color6:hover {
-      background-color: #34495E !important; }
-  body #controls {
-    position: fixed;
-    bottom: 0;
-    right: 5%;
-    width: 20%;
-    height: 6vh;
-    padding: 1%;
-    background-color: black;
+body #background {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  background: linear-gradient(60deg, #CC4949 0, #CC4949 60%, #F75959 60%, #F75959 100%); }
+body #mobileMenu {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 50vh;
+  z-index: 6;
+  text-align: center;
+  padding-top: 10vh;
+  text-transform: uppercase;
+  border-bottom: 5px solid #373a3c; }
+  body #mobileMenu a {
+    color: #373a3c;
+    text-align: center !important;
+    text-decoration: none;
+    padding-bottom: 15vh;
+    z-index: 7; }
+    body #mobileMenu a:hover {
+      color: #676767; }
+body .mobileMenuBG {
+  background-color: white !important;
+  display: inline !important; }
+body .hide {
+  display: none !important; }
+body .page {
+  /* search.html */
+  /* contact.html */ }
+  body .page #logo {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    top: 5vh;
+    left: 3%;
+    padding: 0;
+    margin: 0;
+    z-index: 6; }
+    @media (min-width: 25em) {
+      body .page #logo {
+        width: 40%;
+        top: 1vh; } }
+    @media (min-width: 32em) {
+      body .page #logo {
+        width: 25%;
+        top: 2vh; } }
+  body .page #logoAlt {
+    position: absolute;
+    width: 55%;
+    height: auto;
+    top: 5vh;
+    left: 3%;
+    padding: 0;
+    margin: 0;
+    z-index: 6; }
+    @media (min-width: 25em) {
+      body .page #logoAlt {
+        width: 35%;
+        top: 3vh; } }
+    @media (min-width: 32em) {
+      body .page #logoAlt {
+        width: 20%;
+        top: 2vh; } }
+  body .page .nav {
+    padding: 0;
+    margin: 0;
     z-index: 5;
-    font-size: 0.5em; }
-    body #controls .circle {
-      position: relative;
-      border-radius: 50%;
-      width: 10%;
-      height: auto;
-      padding-top: 10%;
-      margin-left: 3%;
-      background: white;
-      float: left; }
-    body #controls .combo2 {
-      background-color: #F1C40F; }
-    body #controls .combo1 {
-      background-color: #F75959; }
-    body #controls .combo3 {
-      background-color: #1ABC9C; }
-    body #controls .combo4 {
-      background-color: #2ECC71; }
-    body #controls .combo5 {
-      background-color: #3498DB; }
-    body #controls .combo6 {
-      background-color: #34495E; }
-    body #controls i {
-      position: absolute;
-      color: #fff;
-      font-size: 2em;
-      right: 5%;
-      top: 1vh; }
-  body #background {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    z-index: 0; }
-  body #mobileMenu {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 50vh;
-    z-index: 6;
-    text-align: center;
-    padding-top: 10vh;
-    text-transform: uppercase;
-    border-bottom: 5px solid #373a3c; }
-    body #mobileMenu a {
-      color: #373a3c;
-      text-align: center !important;
-      text-decoration: none;
-      padding-bottom: 15vh;
-      z-index: 7; }
-      body #mobileMenu a:hover {
-        color: #676767; }
-  body .mobileMenuBG {
-    background-color: white !important;
-    display: inline !important; }
-  body .hide {
-    display: none !important; }
-  body .bg2 {
-    background: linear-gradient(60deg, #F39C12 0, #F39C12 60%, #F1C40F 60%, #F1C40F 100%); }
-  body .bg1 {
-    background: linear-gradient(60deg, #CC4949 0, #CC4949 60%, #F75959 60%, #F75959 100%); }
-  body .bg3 {
-    background: linear-gradient(60deg, #16A085 0, #16A085 60%, #1ABC9C 60%, #1ABC9C 100%); }
-  body .bg4 {
-    background: linear-gradient(60deg, #27AE60 0, #27AE60 60%, #2ECC71 60%, #2ECC71 100%); }
-  body .bg5 {
-    background: linear-gradient(60deg, #2980B9 0, #2980B9 60%, #3498DB 60%, #3498DB 100%); }
-  body .bg6 {
-    background: linear-gradient(60deg, #2C3E50 0, #2C3E50 60%, #34495E 60%, #34495E 100%); }
-  body .page {
-    /* search.html */
-    /* contact.html */ }
-    body .page #logo {
-      position: absolute;
-      width: 60%;
-      height: auto;
-      top: 2vh;
-      left: 3%;
-      padding: 0;
-      margin: 0;
-      z-index: 6; }
-      @media (min-width: 25em) {
-        body .page #logo {
-          width: 30%; } }
-      @media (min-width: 32em) {
-        body .page #logo {
-          width: 20%; } }
-    body .page .nav {
-      padding: 0;
-      margin: 0;
-      z-index: 5;
-      position: absolute;
-      padding: 0 5%;
-      display: none; }
-      body .page .nav nav {
-        text-align: right; }
-        body .page .nav nav a {
-          color: white;
-          font-size: 0.5em;
-          text-transform: lowercase;
-          text-decoration: none;
-          padding-right: 3%;
-          -webkit-transition: color 0.25s ease-in-out;
-          -ms-transition: color 0.25s ease-in-out;
-          transition: color 0.25s ease-in-out; }
-          body .page .nav nav a:hover {
-            color: #676767; }
-        body .page .nav nav span a {
-          font-weight: 700; }
-      @media (min-width: 34em) {
-        body .page .nav {
-          display: inline; } }
-    body .page .nav-mobile {
-      position: absolute;
-      width: 10%;
-      right: 5%;
-      z-index: 6; }
-      body .page .nav-mobile a {
-        font-size: 1.5em;
+    position: absolute;
+    padding: 0 5%;
+    display: none; }
+    body .page .nav nav {
+      text-align: right; }
+      body .page .nav nav a {
         color: white;
+        font-size: 0.5em;
+        text-transform: lowercase;
+        text-decoration: none;
+        padding-right: 3%;
         -webkit-transition: color 0.25s ease-in-out;
         -ms-transition: color 0.25s ease-in-out;
         transition: color 0.25s ease-in-out; }
-        body .page .nav-mobile a:hover {
+        body .page .nav nav a:hover {
           color: #676767; }
+      body .page .nav nav span a {
+        font-weight: 700; }
+    @media (min-width: 34em) {
+      body .page .nav {
+        display: inline; } }
+  body .page .nav-mobile {
+    position: absolute;
+    width: 100%;
+    right: 0%;
+    z-index: 6;
+    text-align: right; }
+    body .page .nav-mobile a {
+      font-size: 1.5em;
+      color: white;
+      -webkit-transition: color 0.25s ease-in-out;
+      -ms-transition: color 0.25s ease-in-out;
+      transition: color 0.25s ease-in-out; }
+      body .page .nav-mobile a:hover {
+        color: #676767; }
+    body .page .nav-mobile #number {
+      position: absolute;
+      right: 15%;
+      top: 1.5vh;
+      font-size: 0.75em !important; }
+    @media (min-width: 34em) {
+      body .page .nav-mobile {
+        display: none; } }
+  body .page .nav-mobile-open a {
+    color: #373a3c !important; }
+  body .page .home-intro {
+    height: 90vh;
+    padding: 2vh 3%; }
+    body .page .home-intro #browser {
+      position: absolute;
+      top: 50vh;
+      right: 5%;
+      width: auto;
+      height: 25vh; }
+      @media (min-width: 25em) {
+        body .page .home-intro #browser {
+          top: 40vh;
+          height: 40vh; } }
+      @media (min-width: 28em) {
+        body .page .home-intro #browser {
+          top: 35vh;
+          height: 40vh; } }
       @media (min-width: 34em) {
-        body .page .nav-mobile {
-          display: none; } }
-    body .page .nav-mobile-open a {
-      color: #373a3c !important; }
-    body .page .home-intro {
-      height: 90vh;
-      padding: 2vh 3%; }
-      body .page .home-intro #browser {
-        position: absolute;
-        top: 50vh;
-        right: 5%;
-        width: auto;
-        height: 25vh; }
-        @media (min-width: 25em) {
-          body .page .home-intro #browser {
-            top: 40vh;
-            height: 40vh; } }
-        @media (min-width: 28em) {
-          body .page .home-intro #browser {
-            top: 35vh;
-            height: 40vh; } }
-        @media (min-width: 34em) {
-          body .page .home-intro #browser {
-            top: 20vh;
-            height: 50vh; } }
-        @media (min-width: 62em) {
-          body .page .home-intro #browser {
-            top: 25vh;
-            height: 64vh; } }
-        @media (min-width: 75em) {
-          body .page .home-intro #browser {
-            top: 18vh;
-            height: 64vh; } }
-      body .page .home-intro #home-intro-text {
-        margin-top: 15vh; }
-        @media (min-width: 24em) {
-          body .page .home-intro #home-intro-text {
-            margin-top: 20vh; } }
-        body .page .home-intro #home-intro-text h1 {
-          color: #fff;
-          text-transform: uppercase;
-          font-weight: 700; }
-        body .page .home-intro #home-intro-text .lead {
-          font-size: 1em;
-          padding-bottom: 2vh; }
-        body .page .home-intro #home-intro-text .follow {
-          font-size: 1.9em;
-          letter-spacing: 0.01em;
-          line-height: 1em;
-          padding-bottom: 2vh; }
-        body .page .home-intro #home-intro-text .brief {
-          width: 42%;
-          font-size: 0.7em;
-          color: #fff; }
-          @media (min-width: 24) {
-            body .page .home-intro #home-intro-text .brief {
-              width: 30%; } }
-          @media (min-width: 34em) {
-            body .page .home-intro #home-intro-text .brief {
-              width: 35%;
-              font-size: 0.6em; } }
-    body .page .home-content {
-      height: auto;
-      padding: 10vh 0;
-      background-color: white; }
-      body .page .home-content .col-sm-4 {
-        padding-top: 5vh; }
-      body .page .home-content img {
-        width: 30%;
-        height: auto;
-        margin-left: 35%;
-        margin-bottom: 2vh; }
-        @media (min-width: 34em) {
-          body .page .home-content img {
-            width: 50%;
-            margin-left: 25%; } }
-      body .page .home-content h2 {
-        width: 80%;
-        margin-left: 10%;
-        font-size: 0.6em;
-        text-align: center; }
-      body .page .home-content a {
-        text-decoration: none; }
-      body .page .home-content button {
-        width: 50%;
-        margin-left: 25%;
-        background-color: #CC4949;
-        border: 0 solid white; }
-        body .page .home-content button:hover {
-          background-color: #F75959; }
-        @media (max-width: 60em) {
-          body .page .home-content button {
-            font-size: 0.5em; } }
-    body .page .page-content {
-      height: auto;
-      padding: 10vh 10%;
-      background-color: white; }
-      body .page .page-content .envelope-icon-wrapper {
-        margin-top: -15vh;
-        font-size: 1.5em;
-        text-align: center; }
-        @media (min-width: 34em) {
-          body .page .page-content .envelope-icon-wrapper {
-            margin-top: -30vh; } }
-        body .page .page-content .envelope-icon-wrapper .fa-circle {
-          color: #F9BF3B; }
-        body .page .page-content .envelope-icon-wrapper .envelope-icon {
-          color: #CC4949;
-          z-index: 2; }
-      body .page .page-content .mail-wrapper {
-        background-color: #f4f1f0;
-        margin-top: -5vh;
-        padding: 5vh 5%;
-        line-height: 0.5; }
-        @media (min-width: 34em) {
-          body .page .page-content .mail-wrapper {
-            margin-top: -6vh; } }
-        @media (min-width: 48em) {
-          body .page .page-content .mail-wrapper {
-            margin-top: -8vh; } }
-        @media (min-width: 50em) {
-          body .page .page-content .mail-wrapper {
-            margin-top: -10vh; } }
-        body .page .page-content .mail-wrapper .contact-description {
-          line-height: 0.25; }
-        body .page .page-content .mail-wrapper h1 {
-          font-size: 1em; }
-        body .page .page-content .mail-wrapper p {
-          font-size: 0.4em;
-          display: inline; }
-          body .page .page-content .mail-wrapper p span {
-            color: #CC4949;
-            font-weight: 700; }
-        body .page .page-content .mail-wrapper label {
-          font-size: 0.25em; }
-        body .page .page-content .mail-wrapper #contact .contact-input {
-          width: 100%;
-          margin: 1vh 0;
-          padding: 1vh 1%;
-          line-height: 1.5 !important;
-          border: 0;
-          font-size: 0.4em; }
-        body .page .page-content .mail-wrapper #contact textarea {
-          height: 20vh; }
-        body .page .page-content .mail-wrapper .ending-message {
-          display: block;
-          font-size: 0.3em; }
-      body .page .page-content .search-icon-wrapper {
-        padding: 5vh 5%; }
-        body .page .page-content .search-icon-wrapper .search-icon {
-          font-size: 2em;
-          text-align: center;
-          color: #CC4949; }
-        @media (min-width: 34em) {
-          body .page .page-content .search-icon-wrapper {
-            padding: 5vh 10%; }
-            body .page .page-content .search-icon-wrapper .search-icon {
-              font-size: 3em; } }
-      body .page .page-content h1 {
-        color: #CC4949; }
-      body .page .page-content h2 {
-        font-size: 0.6em;
-        text-align: center; }
-      body .page .page-content p {
-        font-size: 0.5em;
-        text-align: center; }
-    body .page .contact-page {
-      padding: 2vh 10% 10vh; }
-    body .page .points {
-      background-color: #f4f1f0;
-      height: auto;
-      padding: 2vh 2%; }
-      @media (min-width: 32em) {
-        body .page .points {
-          height: 100vh; } }
-      @media (min-width: 48em) {
-        body .page .points {
-          height: 52vh; } }
+        body .page .home-intro #browser {
+          top: 20vh;
+          height: 50vh; } }
       @media (min-width: 62em) {
-        body .page .points {
-          height: 57vh; } }
-      body .page .points .card {
-        border-radius: 0; }
-        body .page .points .card h1 {
-          font-size: 1.5em;
-          text-align: center; }
-        @media (min-width: 32em) {
-          body .page .points .card {
-            width: 48%;
-            height: 45vh !important;
-            float: left;
-            margin: 1%; } }
-        @media (min-width: 48em) {
-          body .page .points .card {
-            width: 23%;
-            height: 45vh !important;
-            float: left;
-            margin: 1%; } }
-        @media (min-width: 62em) {
-          body .page .points .card {
-            width: 23%;
-            height: 50vh !important;
-            float: left;
-            margin: 1%; } }
-      body .page .points .card-trio {
-        border-radius: 0;
-        background-color: #fff; }
-        body .page .points .card-trio h1 {
-          font-size: 1.5em;
-          text-align: center; }
-        @media (min-width: 32em) {
-          body .page .points .card-trio {
-            width: 31.33%;
-            height: 45vh !important;
-            float: left;
-            margin: 1%; } }
-        @media (min-width: 48em) {
-          body .page .points .card-trio {
-            width: 31.33%;
-            height: 45vh !important;
-            float: left;
-            margin: 1%; } }
-        @media (min-width: 62em) {
-          body .page .points .card-trio {
-            width: 31.33%;
-            height: 50vh !important;
-            float: left;
-            margin: 1%; } }
-      body .page .points .card-five {
-        border-radius: 0;
-        background-color: #fff; }
-        body .page .points .card-five h1 {
-          font-size: 1.5em;
-          text-align: center; }
-        @media (min-width: 32em) {
-          body .page .points .card-five {
-            width: 48%;
-            height: 45vh !important;
-            float: left;
-            margin: 1%; } }
-        @media (min-width: 48em) {
-          body .page .points .card-five {
-            width: 18%;
-            height: 45vh !important;
-            float: left;
-            margin: 1%; } }
-        @media (min-width: 62em) {
-          body .page .points .card-five {
-            width: 18%;
-            height: 50vh !important;
-            float: left;
-            margin: 1%; } }
-      body .page .points .point {
-        background-color: #fff;
-        margin-right: -1%; }
-      body .page .points img {
-        width: 50%;
-        height: auto;
-        margin-left: 25%; }
-      body .page .points h1 {
+        body .page .home-intro #browser {
+          top: 25vh;
+          height: 64vh; } }
+      @media (min-width: 75em) {
+        body .page .home-intro #browser {
+          top: 18vh;
+          height: 64vh; } }
+    body .page .home-intro #home-intro-text {
+      margin-top: 15vh; }
+      @media (min-width: 24em) {
+        body .page .home-intro #home-intro-text {
+          margin-top: 20vh; } }
+      body .page .home-intro #home-intro-text h1 {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700; }
+      body .page .home-intro #home-intro-text .lead {
+        font-size: 1em;
+        padding-bottom: 2vh; }
+      body .page .home-intro #home-intro-text .follow {
+        font-size: 1.9em;
+        letter-spacing: 0.01em;
+        line-height: 1em;
+        padding-bottom: 2vh; }
+      body .page .home-intro #home-intro-text .brief {
+        width: 42%;
+        font-size: 0.7em;
+        color: #fff; }
+        @media (min-width: 24) {
+          body .page .home-intro #home-intro-text .brief {
+            width: 30%; } }
+        @media (min-width: 34em) {
+          body .page .home-intro #home-intro-text .brief {
+            width: 35%;
+            font-size: 0.6em; } }
+  body .page .home-content {
+    height: auto;
+    padding: 10vh 0;
+    background-color: white; }
+    body .page .home-content .col-sm-4 {
+      padding-top: 5vh; }
+    body .page .home-content img {
+      width: 30%;
+      height: auto;
+      margin-left: 35%;
+      margin-bottom: 2vh; }
+      @media (min-width: 34em) {
+        body .page .home-content img {
+          width: 50%;
+          margin-left: 25%; } }
+    body .page .home-content h1 {
+      font-size: 1.75em;
+      text-align: center;
+      color: #CC4949; }
+    body .page .home-content h2 {
+      width: 80%;
+      margin-left: 10%;
+      font-size: 0.6em;
+      text-align: center; }
+    body .page .home-content a {
+      text-decoration: none; }
+    body .page .home-content button {
+      width: 50%;
+      margin-left: 25%;
+      background-color: #CC4949;
+      border: 0 solid white; }
+      body .page .home-content button:hover {
+        background-color: #F75959; }
+      @media (max-width: 60em) {
+        body .page .home-content button {
+          font-size: 0.5em; } }
+  body .page .page-content {
+    height: 60vh;
+    padding: 2vh 4% 2vh 2%;
+    background-color: #f4f1f0; }
+    @media (min-width: 32em) {
+      body .page .page-content {
+        height: 55vh; } }
+    body .page .page-content h1 {
+      color: #CC4949;
+      font-size: 1em; }
+    body .page .page-content h2 {
+      font-size: 0.4em;
+      text-align: center; }
+    body .page .page-content p {
+      font-size: 0.3em;
+      text-align: center; }
+    body .page .page-content .card {
+      width: 100%;
+      border: 0;
+      border-radius: 0;
+      margin: 0%;
+      padding: 2vh 10%;
+      float: left;
+      height: 60vh; }
+      body .page .page-content .card h1 {
+        font-size: 2em; }
+      body .page .page-content .card h2 {
+        font-size: 0.65em;
+        text-align: left; }
+      @media (min-width: 32em) {
+        body .page .page-content .card {
+          width: 100%;
+          height: 50vh !important;
+          float: left;
+          margin: 1%; }
+          body .page .page-content .card h1 {
+            font-size: 1em; }
+          body .page .page-content .card h2 {
+            font-size: 0.35em;
+            text-align: left; } }
+    body .page .page-content .envelope-icon-wrapper {
+      margin-top: -15vh;
+      font-size: 1.5em;
+      text-align: center; }
+      @media (min-width: 34em) {
+        body .page .page-content .envelope-icon-wrapper {
+          margin-top: -30vh; } }
+      body .page .page-content .envelope-icon-wrapper .fa-circle {
+        color: #F9BF3B; }
+      body .page .page-content .envelope-icon-wrapper .envelope-icon {
+        color: #CC4949;
+        z-index: 2; }
+    body .page .page-content .mail-wrapper {
+      background-color: #f4f1f0;
+      margin-top: -5vh;
+      padding: 5vh 5%;
+      line-height: 0.5; }
+      @media (min-width: 34em) {
+        body .page .page-content .mail-wrapper {
+          margin-top: -6vh; } }
+      @media (min-width: 48em) {
+        body .page .page-content .mail-wrapper {
+          margin-top: -8vh; } }
+      @media (min-width: 50em) {
+        body .page .page-content .mail-wrapper {
+          margin-top: -10vh; } }
+      body .page .page-content .mail-wrapper .contact-description {
+        line-height: 0.25;
+        margin-bottom: 5vh; }
+      body .page .page-content .mail-wrapper h1 {
+        font-size: 0.75em; }
+      body .page .page-content .mail-wrapper p {
+        font-size: 0.3em;
+        display: inline; }
+        body .page .page-content .mail-wrapper p span {
+          color: #CC4949;
+          font-weight: 700; }
+      body .page .page-content .mail-wrapper label {
+        font-size: 0.25em; }
+      body .page .page-content .mail-wrapper #contact .contact-input {
+        width: 100%;
+        margin: 1vh 0;
+        padding: 1vh 1%;
+        line-height: 1.5 !important;
+        border: 0;
+        font-size: 0.4em; }
+      body .page .page-content .mail-wrapper #contact textarea {
+        height: 20vh; }
+      body .page .page-content .mail-wrapper .ending-message {
+        display: block;
+        font-size: 0.3em; }
+    body .page .page-content .search-icon-wrapper {
+      padding: 0; }
+      body .page .page-content .search-icon-wrapper .search-icon {
+        font-size: 1.5em;
+        text-align: center;
         color: #CC4949; }
-      body .page .points h2 {
+      @media (min-width: 34em) {
+        body .page .page-content .search-icon-wrapper {
+          padding: 0; }
+          body .page .page-content .search-icon-wrapper .search-icon {
+            font-size: 1.5em; } }
+  body .page .points {
+    background-color: #f4f1f0;
+    padding: 2vh 2%; }
+    @media (min-width: 32em) {
+      body .page .points {
+        height: 55vh; } }
+    body .page .points .card {
+      border-radius: 0; }
+      body .page .points .card h1 {
         font-size: 1em;
         text-align: center; }
-      body .page .points p {
+      @media (min-width: 32em) {
+        body .page .points .card {
+          width: 48%;
+          height: 45vh !important;
+          float: left;
+          margin: 1%; } }
+      @media (min-width: 48em) {
+        body .page .points .card {
+          width: 23%;
+          height: 45vh !important;
+          float: left;
+          margin: 1%; } }
+      @media (min-width: 62em) {
+        body .page .points .card {
+          width: 23%;
+          height: 50vh !important;
+          float: left;
+          margin: 1%; } }
+    body .page .points .trio-contact-card {
+      width: 98% !important;
+      height: 47% !important; }
+      body .page .points .trio-contact-card h1 {
+        font-size: 1em;
+        text-align: left; }
+      body .page .points .trio-contact-card p {
+        font-size: 0.3em; }
+      body .page .points .trio-contact-card button {
+        width: 100%; }
+    body .page .points .quad-contact-card {
+      width: 64.5% !important;
+      height: 47% !important; }
+      body .page .points .quad-contact-card h1 {
+        font-size: 1em;
+        text-align: left; }
+      body .page .points .quad-contact-card p {
+        font-size: 0.3em; }
+      body .page .points .quad-contact-card button {
+        width: 100%; }
+    body .page .points .card-trio {
+      border-radius: 0;
+      background-color: #fff;
+      margin: 2vh 3% 2vh 1%; }
+      body .page .points .card-trio h1 {
+        font-size: 1em;
+        text-align: center; }
+      body .page .points .card-trio h2 {
+        font-size: 1em;
+        padding: 0 10%; }
+      body .page .points .card-trio .emailUs {
+        font-size: 0.6em; }
+      body .page .points .card-trio .emailUsLower {
+        text-align: left; }
+      body .page .points .card-trio .emailUsBtn {
+        font-size: 0.4em;
+        padding: 2vh 2%; }
+      @media (min-width: 32em) {
+        body .page .points .card-trio {
+          width: 31.33%;
+          height: 47% !important;
+          float: left;
+          margin: 1%; }
+          body .page .points .card-trio h1 {
+            font-size: 0.75em;
+            text-align: center; }
+          body .page .points .card-trio h2 {
+            font-size: 0.3em; } }
+    @media (min-width: 32em) {
+      body .page .points .search-contact {
+        width: 64.66%; }
+        body .page .points .search-contact h1 {
+          text-align: center !important; }
+        body .page .points .search-contact p {
+          display: none; } }
+    @media (min-width: 32em) {
+      body .page .points .optimization-contact {
+        width: 98%; }
+        body .page .points .optimization-contact h1 {
+          text-align: center; }
+        body .page .points .optimization-contact p {
+          font-size: 0.35em;
+          margin: 0; }
+        body .page .points .optimization-contact button {
+          width: 40%;
+          margin-left: 30%; } }
+    @media (min-width: 32em) {
+      body .page .points .analytics-contact p {
+        display: none; } }
+    body .page .points .card-five {
+      border-radius: 0;
+      background-color: #fff; }
+      body .page .points .card-five h1 {
+        font-size: 1.5em;
+        text-align: center; }
+      @media (min-width: 32em) {
+        body .page .points .card-five {
+          width: 48%;
+          height: 45vh !important;
+          float: left;
+          margin: 1%; } }
+      @media (min-width: 48em) {
+        body .page .points .card-five {
+          width: 18%;
+          height: 45vh !important;
+          float: left;
+          margin: 1%; } }
+      @media (min-width: 62em) {
+        body .page .points .card-five {
+          width: 18%;
+          height: 50vh !important;
+          float: left;
+          margin: 1%; } }
+    body .page .points .point {
+      background-color: #fff;
+      margin-right: -1%; }
+    body .page .points img {
+      width: 50%;
+      height: auto;
+      margin-left: 25%; }
+    body .page .points h1 {
+      color: #CC4949; }
+    body .page .points h2 {
+      font-size: 0.4em;
+      text-align: center; }
+    body .page .points p {
+      font-size: 0.5em;
+      text-align: center; }
+    body .page .points button {
+      width: 80%;
+      margin-left: 10%;
+      background-color: #CC4949;
+      border: 0 solid white; }
+      body .page .points button:hover {
+        background-color: #F75959; }
+    @media (min-width: 32em) {
+      body .page .points h2 {
+        font-size: 0.3em; } }
+  body .page .contact-page {
+    padding: 2vh 10% 10vh;
+    background-color: #fff; }
+  body .page .home-contact {
+    height: auto;
+    background-color: #f4f1f0;
+    padding: 10vh 5%; }
+    body .page .home-contact .contact-card {
+      background-color: #fff;
+      height: 50vh;
+      padding: 10vh 0 15vh; }
+      body .page .home-contact .contact-card .col-xs-3 {
+        display: none; }
+        @media (min-width: 34em) {
+          body .page .home-contact .contact-card .col-xs-3 {
+            display: inline; } }
+      body .page .home-contact .contact-card .col-xs-9 {
+        display: none; }
+        @media (min-width: 34em) {
+          body .page .home-contact .contact-card .col-xs-9 {
+            display: inline; } }
+      @media (min-width: 34em) {
+        body .page .home-contact .contact-card .col-xs-12 {
+          display: none; } }
+      body .page .home-contact .contact-card .envelope-icon-wrapper {
+        font-size: 1em;
+        text-align: center; }
+        @media (min-width: 34em) {
+          body .page .home-contact .contact-card .envelope-icon-wrapper {
+            font-size: 2.5em; } }
+        body .page .home-contact .contact-card .envelope-icon-wrapper .envelope-icon {
+          color: #CC4949;
+          z-index: 2; }
+      body .page .home-contact .contact-card .contact-heading {
+        text-transform: uppercase;
+        font-size: 1em;
+        text-align: center; }
+        @media (min-width: 34em) {
+          body .page .home-contact .contact-card .contact-heading {
+            text-align: left; } }
+      body .page .home-contact .contact-card .contact-description {
         font-size: 0.5em;
         text-align: center; }
-      body .page .points button {
-        width: 80%;
-        margin-left: 10%;
+        @media (min-width: 34em) {
+          body .page .home-contact .contact-card .contact-description {
+            width: 60%;
+            text-align: left; } }
+      body .page .home-contact .contact-card button {
+        width: 50%;
+        margin-left: 25%;
+        font-size: 0.5em;
         background-color: #CC4949;
         border: 0 solid white; }
-        body .page .points button:hover {
+        body .page .home-contact .contact-card button:hover {
           background-color: #F75959; }
-      @media (min-width: 32em) {
-        body .page .points h2 {
-          font-size: 0.5em; } }
-    body .page .home-contact {
-      height: auto;
-      background-color: #f4f1f0;
-      padding: 10vh 5%; }
-      body .page .home-contact .contact-card {
-        background-color: #fff;
-        height: 50vh;
-        padding: 10vh 0 15vh; }
-        body .page .home-contact .contact-card .col-xs-3 {
-          display: none; }
-          @media (min-width: 34em) {
-            body .page .home-contact .contact-card .col-xs-3 {
-              display: inline; } }
-        body .page .home-contact .contact-card .col-xs-9 {
-          display: none; }
-          @media (min-width: 34em) {
-            body .page .home-contact .contact-card .col-xs-9 {
-              display: inline; } }
         @media (min-width: 34em) {
-          body .page .home-contact .contact-card .col-xs-12 {
-            display: none; } }
-        body .page .home-contact .contact-card .envelope-icon-wrapper {
-          font-size: 1em;
-          text-align: center; }
-          @media (min-width: 34em) {
-            body .page .home-contact .contact-card .envelope-icon-wrapper {
-              font-size: 2.5em; } }
-          body .page .home-contact .contact-card .envelope-icon-wrapper .envelope-icon {
-            color: #CC4949;
-            z-index: 2; }
-        body .page .home-contact .contact-card .contact-heading {
-          text-transform: uppercase;
-          font-size: 1em;
-          text-align: center; }
-          @media (min-width: 34em) {
-            body .page .home-contact .contact-card .contact-heading {
-              text-align: left; } }
-        body .page .home-contact .contact-card .contact-description {
-          font-size: 0.5em;
-          text-align: center; }
-          @media (min-width: 34em) {
-            body .page .home-contact .contact-card .contact-description {
-              width: 60%;
-              text-align: left; } }
-        body .page .home-contact .contact-card button {
-          width: 50%;
-          margin-left: 25%;
-          margin-top: -5vh;
-          font-size: 0.5em;
-          background-color: #CC4949;
-          border: 0 solid white; }
-          body .page .home-contact .contact-card button:hover {
-            background-color: #F75959; }
-          @media (min-width: 34em) {
-            body .page .home-contact .contact-card button {
-              width: auto;
-              margin-left: 0;
-              font-size: auto; } }
-    body .page .page-contact {
-      height: auto;
-      background-color: #fff;
-      padding: 10vh 0; }
-      body .page .page-contact .contact-card {
-        background-color: #fff;
-        height: 50vh;
-        padding: 10vh 10% 15vh; }
-        body .page .page-contact .contact-card .col-xs-3 {
-          display: none; }
-          @media (min-width: 34em) {
-            body .page .page-contact .contact-card .col-xs-3 {
-              display: inline; } }
-        body .page .page-contact .contact-card .col-xs-9 {
-          display: none; }
-          @media (min-width: 34em) {
-            body .page .page-contact .contact-card .col-xs-9 {
-              display: inline; } }
-        @media (min-width: 34em) {
-          body .page .page-contact .contact-card .col-xs-12 {
-            display: none; } }
-        body .page .page-contact .contact-card .envelope-icon-wrapper {
-          font-size: 1em;
-          text-align: center; }
-          @media (min-width: 34em) {
-            body .page .page-contact .contact-card .envelope-icon-wrapper {
-              font-size: 2.5em; } }
-          body .page .page-contact .contact-card .envelope-icon-wrapper .envelope-icon {
-            color: #CC4949;
-            z-index: 2; }
-        body .page .page-contact .contact-card .contact-heading {
-          text-transform: uppercase;
-          font-size: 1em;
-          text-align: center; }
-          @media (min-width: 34em) {
-            body .page .page-contact .contact-card .contact-heading {
-              text-align: left;
-              padding-left: 5%; } }
-        body .page .page-contact .contact-card .contact-description {
-          font-size: 0.5em;
-          text-align: center; }
-          @media (min-width: 34em) {
-            body .page .page-contact .contact-card .contact-description {
-              width: 60%;
-              padding-left: 5%;
-              text-align: left; } }
-        body .page .page-contact .contact-card button {
-          width: 50%;
-          margin-left: 25%;
-          margin-top: -5vh;
-          font-size: 0.5em;
-          background-color: #CC4949;
-          border: 0 solid white; }
-          body .page .page-contact .contact-card button:hover {
-            background-color: #F75959; }
-          @media (min-width: 34em) {
-            body .page .page-contact .contact-card button {
-              width: auto;
-              margin-left: 5%;
-              font-size: auto; } }
-    body .page .search-intro {
-      height: 70vh;
-      padding: 2vh 3%; }
-      body .page .search-intro #search-intro-text {
-        margin-top: 15vh; }
-        @media (min-width: 24em) {
-          body .page .search-intro #search-intro-text {
-            margin-top: 20vh; } }
-        body .page .search-intro #search-intro-text h1 {
-          color: #fff;
-          text-transform: uppercase;
-          font-weight: 700; }
-        body .page .search-intro #search-intro-text .lead {
-          font-size: 1em;
-          padding-bottom: 2vh; }
-        body .page .search-intro #search-intro-text .follow {
-          font-size: 1.9em;
-          letter-spacing: 0.01em;
-          line-height: 1em;
-          padding-bottom: 2vh; }
-    body .page .contact-intro {
-      height: 20vh;
-      padding: 2vh 3%; }
-      @media (min-width: 34em) {
-        body .page .contact-intro {
-          height: 40vh; } }
-      body .page .contact-intro #contact-intro-text {
-        margin-top: 15vh; }
-        @media (min-width: 24em) {
-          body .page .contact-intro #contact-intro-text {
-            margin-top: 20vh; } }
-        body .page .contact-intro #contact-intro-text h1 {
-          color: #fff;
-          text-transform: uppercase;
-          font-weight: 700; }
-        body .page .contact-intro #contact-intro-text .lead {
-          font-size: 1em;
-          padding-bottom: 2vh; }
-        body .page .contact-intro #contact-intro-text .follow {
-          font-size: 1.9em;
-          letter-spacing: 0.01em;
-          line-height: 1em;
-          padding-bottom: 2vh; }
-    body .page .footer {
-      padding-top: 10vh;
+          body .page .home-contact .contact-card button {
+            width: auto;
+            margin-left: 0;
+            font-size: auto; } }
+  body .page .page-contact {
+    height: auto;
+    background-color: red;
+    padding: 10vh 0; }
+  body .page .search-intro {
+    height: 40vh;
+    padding: 2vh 3%; }
+    body .page .search-intro #search-intro-text {
+      margin-top: 15vh; }
+      @media (min-width: 24em) {
+        body .page .search-intro #search-intro-text {
+          margin-top: 20vh; } }
+      body .page .search-intro #search-intro-text h1 {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700; }
+      body .page .search-intro #search-intro-text .lead {
+        font-size: 1em;
+        padding-bottom: 2vh; }
+      body .page .search-intro #search-intro-text .follow {
+        font-size: 1em;
+        letter-spacing: 0.01em;
+        line-height: 1em;
+        padding-bottom: 2vh; }
+  body .page .contact-intro {
+    height: 20vh;
+    padding: 2vh 3%; }
+    @media (min-width: 34em) {
+      body .page .contact-intro {
+        height: 40vh; } }
+    body .page .contact-intro #contact-intro-text {
+      margin-top: 15vh; }
+      @media (min-width: 24em) {
+        body .page .contact-intro #contact-intro-text {
+          margin-top: 20vh; } }
+      body .page .contact-intro #contact-intro-text h1 {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700; }
+      body .page .contact-intro #contact-intro-text .lead {
+        font-size: 1em;
+        padding-bottom: 2vh; }
+      body .page .contact-intro #contact-intro-text .follow {
+        font-size: 1.9em;
+        letter-spacing: 0.01em;
+        line-height: 1em;
+        padding-bottom: 2vh; }
+  body .page .footer {
+    height: 10vh;
+    background: #fff !important; }
+    body .page .footer div {
+      background: #fff !important;
+      display: inline;
+      padding: 2vh 0 0 2%; }
+    body .page .footer #footerLogo {
+      width: 50%; }
+    body .page .footer #slogan {
+      float: left; }
+    body .page .footer a {
+      text-align: center;
+      color: #373a3c;
+      font-size: 0.5em;
+      display: inline;
+      float: bottom right;
+      padding-right: 5px; }
+    body .page .footer p {
+      text-align: center;
+      color: #373a3c;
+      font-size: 0.5em;
+      display: inline;
+      float: bottom right;
+      padding-right: 5px; }
+  body .page .pageFooter {
+    text-align: center;
+    overflow: hidden;
+    height: 5vh;
+    background: #f4f1f0; }
+    body .page .pageFooter .contact-footer-div {
       background: #fff !important; }
-      body .page .footer div {
-        background: #fff !important;
-        display: inline;
-        padding: 2vh 0 0 2%; }
-      body .page .footer #footerLogo {
-        width: 50%; }
-      body .page .footer #slogan {
-        float: left; }
-      body .page .footer a {
-        text-align: center;
-        color: #373a3c;
-        font-size: 0.5em;
-        display: inline;
-        float: bottom right;
-        padding-right: 5px; }
-      body .page .footer p {
-        text-align: center;
-        color: #373a3c;
-        font-size: 0.5em;
-        display: inline;
-        float: bottom right;
-        padding-right: 5px; }
+    body .page .pageFooter a {
+      color: #CC4949; }
+    body .page .pageFooter p {
+      text-align: center;
+      color: #373a3c;
+      font-size: 0.3em;
+      line-height: 5vh; }
 
 /*# sourceMappingURL=style.css.map */
